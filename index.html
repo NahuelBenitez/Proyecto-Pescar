@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundación XYZ</title>
+    <!-- Enlace a Bootstrap 5 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"
+  </head>
+  <body>
+    <!-- Barra de navegación fija en la parte superior -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container">
+        <!-- Logo/Título en la izquierda -->
+        <a class="navbar-brand" href="#">Fundación XYZ</a>
+        <!-- Botón de navegación para pantallas pequeñas -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Enlaces a la derecha -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Acerca de nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#programs">Programas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carrusel -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+        ></li>
+        <li
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+        ></li>
+        <li
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+        ></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://via.placeholder.com/1200x400?text=Slide+1"
+            class="d-block w-100"
+            alt="Slide 1"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://via.placeholder.com/1200x400?text=Slide+2"
+            class="d-block w-100"
+            alt="Slide 2"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://via.placeholder.com/1200x400?text=Slide+3"
+            class="d-block w-100"
+            alt="Slide 3"
+          />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+
+    <!-- Sección de bienvenida -->
+    <header class="bg-light py-5">
+      <div class="container text-center">
+        <h1>Bienvenidos a la Fundación XYZ</h1>
+        <p class="lead">
+          Nuestra misión es ayudar a aquellos que más lo necesitan.
+        </p>
+      </div>
+    </header>
+
+    <!-- Sección Acerca de nosotros -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="text-center">Acerca de nosotros</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Historia -->
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              volutpat, quam id fringilla feugiat, odio odio rhoncus erat.
+              Nullam a venenatis ex. Etiam gravida consequat nunc, eu iaculis ex
+              porttitor nec. Phasellus id varius odio. Etiam auctor eu ex eu
+              condimentum. Suspendisse potenti. Proin et orci in elit cursus
+              tincidunt. In eu fermentum neque. Vestibulum eget aliquet neque.
+              Pellentesque fermentum dolor vel consectetur bibendum. In id mi at
+              libero egestas ullamcorper at vel elit.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <!-- Misión -->
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Misión</h5>
+                <p class="card-text">
+                  Nuestra misión es mejorar la calidad de vida de las
+                  comunidades más vulnerables, brindando apoyo y recursos para
+                  satisfacer sus necesidades básicas, promover la educación y el
+                  desarrollo sostenible.
+                </p>
+              </div>
+            </div>
+            <br />
+            <!-- Visión -->
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Visión</h5>
+                <p class="card-text">
+                  Nos esforzamos por construir un mundo donde todas las personas
+                  tengan igualdad de oportunidades, acceso a servicios básicos y
+                  puedan alcanzar su máximo potencial, creando un impacto
+                  positivo en sus vidas y en la sociedad.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Programas -->
+    <section id="programs" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center">Nuestros programas</h2>
+
+        <div class="row">
+          <div class="col-md-4 mt-4">
+            <div class="card">
+              <img
+                src="https://via.placeholder.com/300x200?text=Programa+1"
+                class="card-img-top"
+                alt="Programa 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Programa de Estudios</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vivamus volutpat, quam id fringilla feugiat, odio odio rhoncus
+                  erat.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Agregar más tarjetas según el número de programas -->
+          <div class="col-md-4 mt-4">
+            <div class="card">
+              <img
+                src="https://via.placeholder.com/300x200?text=Programa+1"
+                class="card-img-top"
+                alt="Programa 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Programa de Estudios</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vivamus volutpat, quam id fringilla feugiat, odio odio rhoncus
+                  erat.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-4">
+            <div class="card">
+              <img
+                src="https://via.placeholder.com/300x200?text=Programa+1"
+                class="card-img-top"
+                alt="Programa 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Programa de Estudios</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vivamus volutpat, quam id fringilla feugiat, odio odio rhoncus
+                  erat.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-4">
+            <div class="card">
+              <img
+                src="https://via.placeholder.com/300x200?text=Programa+1"
+                class="card-img-top"
+                alt="Programa 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Programa de Estudios</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vivamus volutpat, quam id fringilla feugiat, odio odio rhoncus
+                  erat.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-4">
+            <div class="card">
+              <img
+                src="https://via.placeholder.com/300x200?text=Programa+1"
+                class="card-img-top"
+                alt="Programa 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Programa de Estudios</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vivamus volutpat, quam id fringilla feugiat, odio odio rhoncus
+                  erat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Empresas que confiaron en nosotros (Carrusel) -->
+    <!-- Sección Empresas que confiaron en nosotros (Carrusel) -->
+    <section class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <h3 class="mb-3">
+              Empresas y Fundaciones que confiaron en nosotros
+            </h3>
+          </div>
+          <div class="col-6 text-right">
+            <a
+              class="btn btn-primary mb-3 mr-1"
+              href="#carouselExampleIndicators2"
+              role="button"
+              data-slide="prev"
+            >
+              <i class="fa fa-arrow-left"></i>
+            </a>
+            <a
+              class="btn btn-primary mb-3"
+              href="#carouselExampleIndicators2"
+              role="button"
+              data-slide="next"
+            >
+              <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="col-12">
+            <div
+              id="carouselExampleIndicators2"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Empresa1</h4>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Empresa2</h4>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Empresa3</h4>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Empresa4</h4>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Empresa 5</h4>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=0754ab085804ae8a3b562548e6b4aa2e"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Empresa 6</h4>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Empresa 7</h4>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Empresa8</h4>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Empresa 9</h4>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center">Contacto</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Enviar mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="bg-primary text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3 text-light">
+        © 2023 Copyright:
+        <a class="text-light" href="https://mdbootstrap.com/">GrupoPescar</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- Enlace a Bootstrap 5 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.1/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+  </body>
+</html>
